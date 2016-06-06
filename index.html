@@ -3,6 +3,7 @@
     <head>
         <title>Carpathian</title>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -48,7 +49,7 @@
     </div>
         <div class="swiper-container">
            <div class="swiper-wrapper">
-                <div id="home"class="swiper-slide banner ">
+                <div id="home" class="swiper-slide banner ">
                     <div class="banner_text">
                         <h1>carpathian</h1>
                         <p>graphic design studio</p>
@@ -81,7 +82,7 @@
         </div>
 </header>
 <!--ABOUT-->
- <div id="about_us"class="about">
+ <div id="about_us" class="about">
      <h2> about us</h2><span class="line"></span>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt lorem sed velit fermentum lobortis. Fusce eu semper lacus, eget placerat mauris. Sed lectus tellus, sodales id elit a, feugiat porttitor nulla. Sed porta magna vitae nisl vulputate lacinia. Morbi malesuada sollicitudin tortor, vitae pharetra nunc lacinia eget. Nulla ornare purus nunc, ut dapibus leo sodales adipiscing. Praesent sit amet justo diam. Quisque sagittis egestas sem vitae vestibulum. Quisque nec lacus ornare, volutpat arcu in, lacinia dolor. Integer hendrerit enim ut mauris hendrerit condimentum. Donec ac enim urna. Donec gravida diam id pulvinar adipiscing.</p>
         
@@ -134,15 +135,21 @@
  <div class="skills">
      <h2>our skills</h2><div class="line"></div>
      <div class="circles">
-         <div id="circle1" data-dimension="164" data-text="75%" data-width="16" data-fontsize="38" data-percent="35" data-fgcolor="#f4c60b" data-bgcolor="#fff"  data-fill="#fff" ></div>
+         <div id="circle1" class="circle" data-dimension="164" data-text="75%" 
+            data-width="16" data-fontsize="38" data-percent="35" 
+            data-fgcolor="#f4c60b" data-bgcolor="#fff"  data-fill="#fff" ></div>
          <p>Design</p>
      </div>
      <div class="circles">    
-         <div id="circle2" data-dimension="164" data-text="90%" data-width="16" data-fontsize="38" data-percent="35" data-fgcolor="#f4c60b" data-bgcolor="#fff"  data-fill="#fff" ></div>
+         <div id="circle2" class="circle" data-dimension="164" data-text="90%" 
+            data-width="16" data-fontsize="38" data-percent="35" 
+            data-fgcolor="#f4c60b" data-bgcolor="#fff"  data-fill="#fff" ></div>
          <p>Photography</p>
      </div>
     <div class="circles">         
-         <div id="circle3" data-dimension="164" data-text="30%" data-width="16" data-fontsize="38" data-percent="35" data-fgcolor="#f4c60b" data-bgcolor="#fff" data-fill="#fff" ></div>
+         <div id="circle3" class="circle" data-dimension="164" data-text="30%" 
+            data-width="16" data-fontsize="38" data-percent="35" 
+            data-fgcolor="#f4c60b" data-bgcolor="#fff" data-fill="#fff" ></div>
          <p>Music</p>
      </div>
  </div>
@@ -280,10 +287,10 @@
  <div class="contact" id="contact">
      <h2>contact us</h2><span class="line"></span>
      <div class="contact_form">
-     <form action="">
+     <form action="text">
          <input type="text" placeholder="name">
          <input type="email" placeholder="e-mail"><br>
-         <textarea name="" id="" cols="48" rows="10"></textarea><br>
+         <textarea name="text" id="text" cols="48" rows="10"></textarea><br>
          <a href="">submit</a>
      </form>
      </div>

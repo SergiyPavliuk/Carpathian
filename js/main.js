@@ -34,7 +34,7 @@ $(window).load(function(){
 	  slidesPerView: 1
 	}); 
     var mySwiperBlogSlider = $('.blog .swiper-container').swiper({
-        loop: true,
+      loop: true,
 	  grabCursor: true,
 	  speed: 800,
 	  slidesPerView: 3,
@@ -42,10 +42,10 @@ $(window).load(function(){
       prevButton: '.arrow_left',
       breakpoints:{
           768:{
-              slidesPerView:2
+            slidesPerView:2
           },
           480:{
-          slidesPerView:1
+            slidesPerView:1
       }
         }
     });
@@ -71,63 +71,69 @@ $(window).load(function(){
     masonry: {columnWidth: '.element-item'}
   });
   $('#filters').on( 'click', 'button', function() {
-   $('#filters button').removeClass('is-checked');
-     $(this).addClass('is-cheked');
-                 var filterValue = $(this).attr('data-filter');
-                    $container.isotope({filter: filterValue});
-        });
+        $('#filters button').removeClass('is-checked');
+        $(this).addClass('is-cheked');
+        var filterValue = $(this).attr('data-filter');
+        $container.isotope({filter: filterValue});
+   });
     /*============================*/
 	/* 06 - countTo */
 	/*============================*/
+
     $('.timer').countTo();
-   
-   /* $(window).scroll(function(){
 
-	$('.pricing').not('.animated').each(function(){
-		if($(window).scrollTop() >= $(this).offset().top - $(this).height()){
-			$(this).addClass('animated').find('.timer').countTo();
-		} 
-	});
-}); */
-
-    
-    
     /*============================*/
 	/* 07 - CIRCLIFUL*/
 	/*============================*/
-     $('#circle1').circliful({
-        foregroundColor:'#f4c60b',
-        backgroundColor:'#fff' ,
-        foregroundBorderWidth: 7,
-        backgroundBorderWidth: 7,
-        percent:75,
-        fontColor:'#000' ,
-        animationStep: 3,
-        percentageTextSize:'28' 
+    
+   $(window).scroll(function()
+    {
+        var circle1 = $('#circle1');
+        
+        var hT = $('#circle1').offset().top,
+            hH = $('#circle1').outerHeight(),
+            wH = $(window).height(),
+            wS = $(this).scrollTop();
+                            
+            if (wS > (hT+hH-wH) && !circle1.hasClass('endDrawingCircliful')){
+                circle1.addClass('endDrawingCircliful')
+                
+                $('#circle1').circliful({
+                    foregroundColor:'#f4c60b',
+                    backgroundColor:'#fff' ,
+                    foregroundBorderWidth: 7,
+                    backgroundBorderWidth: 7,
+                    percent:75,
+                    fontColor:'#000' ,
+                    animationStep: 3,
+                    percentageTextSize:'28' 
 
-     });
-    $('#circle2').circliful({
-        foregroundColor:'#f4c60b',
-        backgroundColor:'#fff' ,
-        foregroundBorderWidth: 7,
-        backgroundBorderWidth: 7,
-        percent:90,
-        fontColor:'#000' ,
-        animationStep: 3 ,
-        percentageTextSize:'28' 
+                });
+                $('#circle2').circliful({
+                    foregroundColor:'#f4c60b',
+                    backgroundColor:'#fff' ,
+                    foregroundBorderWidth: 7,
+                    backgroundBorderWidth: 7,
+                    percent:90,
+                    fontColor:'#000' ,
+                    animationStep: 3 ,
+                    percentageTextSize:'28' 
 
-     });
-    $('#circle3').circliful({
-        foregroundColor:'#f4c60b',
-        backgroundColor:'#fff' ,
-        foregroundBorderWidth: 7,
-        backgroundBorderWidth: 7,
-        percent:30,
-        fontColor:'#000' ,
-        animationStep: 3 ,
-        percentageTextSize:'28' 
-
-     });
+                });
+                $('#circle3').circliful({
+                    foregroundColor:'#f4c60b',
+                    backgroundColor:'#fff' ,
+                    foregroundBorderWidth: 7,
+                    backgroundBorderWidth: 7,
+                    percent:30,
+                    fontColor:'#000' ,
+                    animationStep: 3 ,
+                    percentageTextSize:'28'
+                });
+            }
+        
+    });
+     
     /*============================*/
 	/* 08 - Scrollt2id */
 	/*============================*/

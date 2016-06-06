@@ -2,8 +2,8 @@
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* Template Name: Carpathians*/
 /* Version: 1.0 Initial Release*/
-/* Build Date: 30-05-2016*/
-/* Author: Unbranded*/
+/* Build Date: 05-06-2016*/
+/* Author: Sergiy Pavliuk*/
 /* Website: 
 /* Copyright: (C) 2016 */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
@@ -36,10 +36,10 @@
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 
 /* font-family: "RalewayRegular"; */
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,700,800,300") 
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700,800,300") ;
 
-/* font-family: "RalewayRegular"; */
-@import url("https://fonts.googleapis.com/css?family=Crimson+Text") 
+/* font-family: "CrimsonText"; */
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text") ;
 
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -269,7 +269,7 @@ nav li:last-child:after{
     -webkit-transform:translate(-50%);
     -moz-transform:translate(-50%);
     -ms-transform:translate(-50%);
-    -0-transform:translate(-50%);
+    -o-transform:translate(-50%);
     transform: translate(-50%);
 }
 .pagination{
@@ -279,7 +279,7 @@ nav li:last-child:after{
     -webkit-transform:translate(-53%);
     -moz-transform:translate(-53%);
     -ms-transform:translate(-5%);
-    -0-transform:translate(-53%);
+    -o-transform:translate(-53%);
     transform: translate(-53%);
     bottom: 30px !important;
 }
@@ -291,7 +291,6 @@ nav li:last-child:after{
 }
 .swiper-pagination-bullet{
     background: none !important;
-    color: none;
     opacity: 1 !important;
 }
 .swiper-pagination-bullet-active{
@@ -534,7 +533,7 @@ nav li:last-child:after{
     -webkit-transform:translate(-50%);
     -moz-transform:translate(-50%);
     -ms-transform:translate(-50%);
-    -0-transform:translate(-50%);
+    -o-transform:translate(-50%);
     transform: translate(-50%);
 }
 .team .line {
@@ -1154,3 +1153,4 @@ footer .copyright{
     font: 300 12px Raleway;
     padding-bottom: 19px;
 }
+
