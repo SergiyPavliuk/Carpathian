@@ -20,7 +20,10 @@ $(window).load(function(){
     $('.icon-menu').click(function(){
        $('.navi').slideToggle(700); 
     });
-  
+    
+    $('.icon-menu').click(function(){
+        $(this).toggleClass("active");
+    });
 
  /*============================*/
 	/* 03 - SWIPER*/
