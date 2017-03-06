@@ -501,7 +501,9 @@ nav li:last-child:after {
     width: 110px;
     height: 30px;
 }
-
+.bold{
+    font-weight: 600;
+}
 .navi li>a.mPS2id-highlight {
     color: #f4c60b;
 }
@@ -598,13 +600,9 @@ nav li:last-child:after {
     transform: translate(-50%)
 }
 
-.banner a:before {
+.banner a:before, .banner a:after {
     position: absolute;
-    bottom: 45px;
     left: 50%;
-    width: 29px;
-    height: 67px;
-    background: url(../images/mouse-icon.png);
     content: '';
     -webkit-transform: translate(-50%);
     -moz-transform: translate(-50%);
@@ -612,9 +610,36 @@ nav li:last-child:after {
     -o-transform: translate(-50%);
     transform: translate(-50%);
 }
+.banner a:before{
+    bottom: 45px;
+    width: 29px;
+    height: 67px;
+    background: url(../images/mouse-icon.png);
+}
+.banner a:after{
+    width: 2px;
+    height: 8px;
+    bottom: 70px;
+    background: #fff;
+    left: 47.5%;
+    animation: 1.5s tobottom infinite ease-in-out;
+}
+@keyframes tobottom{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        bottom: 65px;
+    }
+    100%{
+        opacity: 0;
+        bottom: 60px;
+    }
+}
 
 .pagination {
     position: absolute;
+    overflow-x: hidden;
     bottom: 30px !important;
     left: 100% !important;
     z-index: 2;
@@ -725,6 +750,9 @@ nav li:last-child:after {
     }
     .pagination {
         transform: translate(-60%);
+    }
+    .banner a{
+        bottom: 70px;
     }
 }
 

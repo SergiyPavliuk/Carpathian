@@ -1,11 +1,11 @@
+/*============================*/
+/* 01 - function on page load */
+/*============================*/
+$(window).load(function () {
+    $('body').addClass('loaded');
+    $('#loader-wrapper').fadeOut(500);
+});
 $(function () {
-    /*============================*/
-    /* 01 - function on page load */
-    /*============================*/
-    $(window).load(function () {
-        $('body').addClass('loaded');
-        $('#loader-wrapper').fadeOut(500);
-    });
     /*============================*/
     /* 02 - Click Menu */
     /*============================*/
@@ -23,7 +23,10 @@ $(function () {
     $('.icon-menu').click(function () {
         $(this).toggleClass("active");
     });
-
+    $('.navi>li').click(function () {
+        $('.navi li').removeClass('bold');
+        $(this).addClass('bold');
+    });
     /*============================*/
     /* 03 - SWIPER*/
     /*============================*/
